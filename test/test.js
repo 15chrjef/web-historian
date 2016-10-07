@@ -58,6 +58,7 @@ describe('server', function() {
 
         // Reset the test file and process request
         fs.closeSync(fs.openSync(archive.paths.list, 'w'));
+        console.log('archives in test', archive.paths.list)
 
         request
           .post('/')
